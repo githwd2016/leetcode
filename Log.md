@@ -10,3 +10,13 @@ Recursive program
 2. left = t1.left + t2.left
 3. right = t1.right + t2.right
 4. don't miss the situation that t1 or t2 is none
+
+## Hamming Distance(461)
+#### Time: 2017.6.27
+#### Description:
+The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+
+Given two integers x and y, calculate the Hamming distance.
+#### Solution:
+1. x xor y
+2. count '1'
