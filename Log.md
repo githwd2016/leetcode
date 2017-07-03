@@ -4,6 +4,8 @@
 Given two binary trees and imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not.
 
 You need to merge them into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of new tree.
+
+Note: The merging process must start from the root nodes of both trees.
 #### Solution:
 Recursive program
 1. if t1 and t2 are all none, return none else return t1 + t2
@@ -25,6 +27,10 @@ Given two integers x and y, calculate the Hamming distance.
 #### Time: 2017.6.29
 #### Description:
 Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.
+
+Note:
+1. n is a positive integer, which is in the range of [1, 10000].
+2. All the integers in the array will be in the range of [-10000, 10000].
 #### Solution:
 先排序，将相邻两个数分为一组，每组较小数都在左边，求和即可
 
@@ -41,4 +47,15 @@ Note:
 #### Solution:
 1. find the minimum h that 2^h > num
 2. return 2^h - 1 - num
+
+## Keyboard Row(500)
+#### Time: 2017.7.3
+#### Description:
+Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.
+
+Note:
+1. You may use one character in the keyboard more than once.
+2. You may assume the input string will only contain letters of alphabet.
+#### Solution:
+python re module or set operate
 
