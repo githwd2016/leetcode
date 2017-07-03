@@ -27,4 +27,5 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.findWords(["Hello", "Alaska", "Dad", "Peace"]))
+    res = s.findWords(["Hello", "Alaska", "Dad", "Peace"])
+    print(res)
