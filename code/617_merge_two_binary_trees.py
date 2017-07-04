@@ -32,3 +32,7 @@ class Solution(object):
         res.left = self.mergeTrees(t1.left if t1 else None, t2.left if t2 else None)
         res.right = self.mergeTrees(t1.right if t1 else None, t2.right if t2 else None)
         return res
+
+
+if __name__ == '__main__':
+    pass
