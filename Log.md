@@ -68,3 +68,20 @@ Note:In the string, each word is separated by single space and there will not be
 #### Solution:
 use list generator or double reverse.
 
+## 566. Reshape the Matrix
+#### Time: 2017.7.5
+#### Description:
+In MATLAB, there is a very useful function called 'reshape', which can reshape a matrix into a new one with different size but keep its original data.
+
+You're given a matrix represented by a two-dimensional array, and two positive integers r and c representing the row number and column number of the wanted reshaped matrix, respectively.
+
+The reshaped matrix need to be filled with all the elements of the original matrix in the same row-traversing order as they were.
+
+If the 'reshape' operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.
+
+Note:
+1. The height and width of the given matrix is in range [1, 100].
+2. The given r and c are all positive.
+#### Solution:
+1. convert nums to 1-dimension list
+2. convert list to r*c matrix
