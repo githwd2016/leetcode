@@ -85,3 +85,18 @@ Note:
 #### Solution:
 1. convert nums to 1-dimension list
 2. convert list to r*c matrix
+
+## 575. Distribute Candies
+#### Time: 2017.7.13
+#### Description:
+Given an integer array with even length, where different numbers in this array represent different kinds of candies.
+Each number means one candy of the corresponding kind.
+You need to distribute these candies equally in number to brother and sister.
+Return the maximum number of kinds of candies the sister could gain.
+
+Note:
+1. The length of the given array is in range [2, 10,000], and will be even.
+2. The number in given array is in range [-100,000, 100,000].
+#### Solution:
+we only need to find the number of unique candies, and select the samller of it and the
+half of the total number.
