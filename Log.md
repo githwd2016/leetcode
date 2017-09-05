@@ -131,4 +131,15 @@ Initially, there is a Robot at position (0, 0). Given a sequence of its moves, j
 
 The move sequence is represented by a string. And each move is represent by a character. The valid robot moves are R (Right), L (Left), U (Up) and D (down). The output should be true or false representing whether the robot makes a circle.
 #### Solution:
-count the amount of 'R', 'L', 'U', 'D', if count('R') == count('L') and count('U') == count('D') return True else False.
+count the a mount of 'R', 'L', 'U', 'D', if count('R') == count('L') and count('U') == count('D') return True else False.
+
+## 669. Trim a Binary Search Tree
+#### Time: 2017.9.5
+#### Description:
+Given a binary search tree and the lowest and highest boundaries as L and R, trim the tree so that all its elements lies in [L, R] (R >= L). You might need to change the root of the tree, so the result should return the new root of the trimmed binary search tree.
+#### Solution:
+If the root is well within the range, then just delegating the problem to left and right subtrees.
+
+If the root is out of the range and less than L, then the entire left subtree can be discarded including the root.
+
+If the root is out of the range and greater than R, then the entire right subtree can be discarded including the root.
