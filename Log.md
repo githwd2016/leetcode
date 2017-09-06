@@ -143,3 +143,12 @@ If the root is well within the range, then just delegating the problem to left a
 If the root is out of the range and less than L, then the entire left subtree can be discarded including the root.
 
 If the root is out of the range and greater than R, then the entire right subtree can be discarded including the root.
+
+## 496. Next Greater Element I
+#### Time: 2017.9.6
+#### Description:
+You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
+
+The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.
+#### Solution:
+We use a stack to keep a decreasing sub-sequence, whenever we see a number x greater than stack.pop() we pop all elements less than x and for all the popped ones, their next greater element is x
