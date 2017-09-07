@@ -152,3 +152,14 @@ You are given two arrays (without duplicates) nums1 and nums2 where nums1’s el
 The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.
 #### Solution:
 We use a stack to keep a decreasing sub-sequence, whenever we see a number x greater than stack.pop() we pop all elements less than x and for all the popped ones, their next greater element is x
+
+## 637. Average of Levels in Binary Tree
+#### Time: 2017.9.7
+#### Description:
+Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
+
+Note:
+1. The range of node's value is in the range of 32-bit signed integer.
+#### Solution:
+1. DFS, record each level's nodes.
+2. use FIFO queue.
